@@ -4,38 +4,47 @@
     <title>Belajar bikin tabel coy</title>
     <style>
       img {
-        width: 20vh;
-        height: 20vh;
+        width: 25vh;
+        height: 30vh;
       }
-      .sedi {
-        img {
-          height: 25vh;
-        }
-      }
-      .ikan {
+
+      .tengah {
         text-align: center;
       }
     </style>
   </head>
   <body bgcolor="#e0e0e0">
-    <h1>Dari awal bikin tabel biasa dulu yagesya</h1>
+    <h1>Membuat tabel di dalam HTML</h1>
     <table border="1" cellpadding="10">
       <tr>
-        <th colspan="4" bgcolor="beige">Ini kucing tapi kolomnya panjang</th>
+        <th colspan="3" bgcolor="beige">Kucing-Kucing Lucu</th>
       </tr>
       <tr>
-        <td><img src="images/MENG.jpg" alt="" /></td>
-        <td>Ini bukan kucing saya</td>
-        <td colspan="2">Tapi kucingnya lucu</td>
+        <td>
+          <img src="images/MENG.jpg" alt="" />
+        </td>
+        <td>Kucing berselimut</td>
+        <td>
+          <ul>
+            <li>Kucing ini sangat lucu</li>
+            <li>Kucing gemas</li>
+            <li>Kucingnya warnanya krem ada corak gelapnya</li>
+          </ul>
+        </td>
       </tr>
       <tr>
-        <td class="ikan" colspan="4">baris 3 yang panjang</td>
-      </tr>
-      <tr class="sedi">
         <td><img src="images/sedi.jpg" alt="" /></td>
-        <td>Ini jga lucu tapi sedih wajahnya</td>
-        <td>Kasian</td>
-        <td>Tapi gemes</td>
+        <td class="tengah">Kucing sedih</td>
+        <td class="tengah" style="word-wrap: break-word">
+          Kucingnya lucu tapi entah mengapa ia tampak sedih padahal menggemaskan
+        </td>
+      </tr>
+      <tr>
+        <td><img src="images/informaticats.jpg" alt="" /></td>
+        <td>Kucing komputer</td>
+        <td>
+          Menggambarkan seolah-olah dia adalah kucing yang jago dengan komputer
+        </td>
       </tr>
     </table>
   </body>
